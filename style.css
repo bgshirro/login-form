@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  max-width: 1280px;
+}
+body{
+    background-color: white;
+    width: fit-content;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -25px;
+}
+.header{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 0rem;
+    right: 0px;
+    background: none;
+    display: grid;
+    padding: 20px;
+    align-items: right;
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    user-select: none;
+    pointer-events: none;
+    justify-content: flex-end;
+}
+ul li{
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    pointer-events: all;
+}
+a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    left: 50%;
+    bottom: -3px;
+    border-radius: 15px;
+}
+li:hover a:before{
+    width: 100%;
+    left: 0;
+    transition: 0.2s all;
+}
+a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 12pt;
+}
+ul:hover a{
+    color: rgb(211, 211, 211);
+}
+ul:hover a:hover{
+    color: #000;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+}
+.form{
+    position: relative;
+    background-color: #f0f0f2;
+    flex-basis: 460px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    border:  12px solid #fff;
+}
+.form p{
+    color: black;
+    place-items: center;
+    pointer-events: none;
+}
+.form input{
+    width: 345px;
+    height: 51.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: #b3b5b4 2px solid;
+    border-radius: 0;
+    background: none;
+    font-size: 10pt;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+.form .username, .mail, .pasword{
+    height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form .username label,
+.form .mail label,
+.form .pasword label{
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    color: #5d6162;
+    pointer-events: none;
+    font-size: 10pt;
+    padding-left: 5px;
+}
+.form input:focus ~ label{
+    transform: translateY(-27px);
+    transition: 0.3s ease;
+}
+.form input label:focus{
+    left: 50%;
+    transition: 0.3s all;
+    border-color: #8f74de;
+}
+button, button a{
+    width: 345px;
+    height: 51.5px;
+    background-color:#3d99ff;
+    border: none;
+    border-radius: 15px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #fff;
+    margin: 30px 0 40px 0;
+}
+button:hover{
+    box-shadow: 0px 15px 5px rgba(61, 153, 255, 0.1);
+    margin-top: 25px;
+    margin-bottom: 45px;
+    transition: 0.3s all;
+}
+.input{
+    justify-content: center;
+    flex-basis: 70%;    
+}
+input:focus{
+    border-bottom: #3d99ff 2px solid;
+}
+.hr{
+    height: 10px;
+    width: 345px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 10pt;
+}
+hr{
+    width: 100px;
+    height: 2px;
+    transform: translateY(10px);
+    border-radius: 25px;
+    background-color: black;
+}
+.linkin{
+    position: relative;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+.linkin .background1,
+.linkin .background2,
+.linkin .background3{
+    height: 51.5px;
+    width: 110px;
+    background: #fff;
+    border-radius: 10px;
+}
+.linkin .background1:hover,
+.linkin .background2:hover,
+.linkin .background3:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 5px rgba(178, 181, 180, 0.3);
+    transition: 0.3s ease;
+}
+.linkin a img{
+    height: 30px;
+    margin: 10px 0px 0px 40px;
+}
+.welcome{
+    padding-left: 80px;
+    padding-top: 120px;
+}
+.checkbox{
+    width: 345px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.checkbox input{
+    margin: 0;
+    width: 20px;
+    height: 50px;
+    border-bottom: 5px;
+}
+.terms p{
+    margin-bottom: -25px;
+}
